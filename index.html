@@ -1,34 +1,24 @@
+<!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>
-            Hex Color Generator
-        </title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="style.css" />
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    </head>
-	    <div id="hex"></div>
-	    <script>
-		  
-          function getColor() {
-             return (
-                   "#" +
-                    Math.random()
-                   .toString(16)
-                   .slice(2, 8)
-                   );
-                 }
-        // sets background color style
-        function setBackground() {
-          var bgColor = getColor();
-          document.body.style.background = bgColor;
-         }
-       // runs function on click
-        document.body.onkeyup = function(e) {
-        if (e.keyCode == 32) {
-          setBackground();
-         }
-        };
-		</script>
+
+  <head>
+    <meta charset="utf-8">
+    <title>Hex Color Generator</title>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,800" rel="stylesheet">
+
+    <!-- Styles -->
+    <link href="/css/style.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <div>
+      <h1 class="hex-color">#3498db</h1>
+      <button class="change-color-btn">New Color</button>
+    </div>
+
+    <!-- Scripts -->
+   
+  </body>
 </html>
